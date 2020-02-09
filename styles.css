@@ -1,0 +1,191 @@
+main {
+  border: 10px solid;
+  height: 900px;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  animation: main 8s infinite;
+}
+
+@keyframes main {
+  0% {
+    border-color: #663387;
+    background-color: #d14783;
+  }
+  25% {
+    border-color: #d14783;
+    background-color: #f5bd45;
+  }
+  50% {
+    border-color: #f5bd45;
+    background-color: #4dafa5;
+  }
+  75% {
+    border-color: #4dafa5;
+    background-color: #663387;
+  }
+  100% {
+    border-color: #663387;
+    background-color: #d14783;
+  }
+}
+
+.letterN {
+  display: flex;
+}
+
+.firstLine {
+  height: 0px;
+  width: 50px;
+  background-color: #663387;
+  position: absolute;
+  left: 300px;
+  top: 200px;
+
+  animation: increase 1s forwards, colourss 8s infinite;
+  animation-delay: 0ms, 1s;
+}
+
+@keyframes increase {
+  100% {
+    height: 500px;
+  }
+}
+
+@keyframes colourss {
+  0% {
+    background-color: #663387;
+  }
+  25% {
+    background-color: #d14783;
+  }
+  50% {
+    background-color: #f5bd45;
+  }
+  75% {
+    background-color: #4dafa5;
+  }
+  100% {
+    background-color: #663387;
+  }
+}
+
+.diagonal {
+  width: 40px;
+  height: 0px;
+  background-color: #663387;
+  transform: rotate(329deg);
+  transform-origin: 10px 34px 0;
+  position: absolute;
+  left: 325px;
+  top: 210px;
+
+  -webkit-animation: increasedi 1s;
+  -moz-animation: increasedi 1s;
+  -o-animation: increasedi 1s;
+  animation: increasedi 1s, colourss 8s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 1s, 1s;
+}
+
+@keyframes increasedi {
+  100% {
+    height: 550px;
+  }
+}
+
+.thirdLine {
+  height: 0px;
+  width: 50px;
+  background-color: #663387;
+  position: absolute;
+  left: 590px;
+  top: 690px;
+
+  -webkit-animation: increasetl 1s;
+  -moz-animation: increasetl 1s;
+  -o-animation: increasetl 1s;
+  animation: increasetl 1s, colourss 8s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 2s, 1s;
+}
+
+@keyframes increasetl {
+  100% {
+    height: 500px;
+    top: 200px;
+  }
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #d1478377;
+}
+
+.ball:hover {
+  background-color: rgba(255, 255, 0, 0.472);
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.red:hover {
+  background-color: rgba(255, 0, 0, 0.315);
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.green:hover {
+  background-color: rgba(0, 255, 0, 0.376);
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.blue:hover {
+  background-color: rgba(0, 217, 255, 0.397);
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.purple:hover {
+  background-color: rgba(174, 0, 255, 0.404);
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -3px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(2deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(5px, -1px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-1px, 3px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-4px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-2px, -1px) rotate(5deg);
+  }
+  90% {
+    transform: translate(1px, 4px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
