@@ -10,7 +10,7 @@ main {
 @keyframes main {
   0% {
     border-color: #663387;
-    background-color: #d14783;
+    background-color: #000000;
   }
   25% {
     border-color: #d14783;
@@ -26,7 +26,7 @@ main {
   }
   100% {
     border-color: #663387;
-    background-color: #d14783;
+    background-color: #000000;
   }
 }
 
@@ -37,7 +37,7 @@ main {
 .firstLine {
   height: 0px;
   width: 50px;
-  background-color: #663387;
+  background-color: #4dafa5;
   position: absolute;
   left: 300px;
   top: 200px;
@@ -54,19 +54,19 @@ main {
 
 @keyframes colourss {
   0% {
-    background-color: #663387;
+    background-color: #4dafa5;
   }
   25% {
-    background-color: #d14783;
+    background-color: #663387;
   }
   50% {
     background-color: #f5bd45;
   }
   75% {
-    background-color: #4dafa5;
+    background-color: #ce2b71;
   }
   100% {
-    background-color: #663387;
+    background-color: #4dafa5;
   }
 }
 
@@ -121,36 +121,42 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: #d1478377;
+  background-color: #8f05ff3b;
+}
+
+.active {
+  background-color: #ce2b72ad;
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .ball:hover {
   background-color: rgba(255, 255, 0, 0.472);
-  animation: wiggle 0.5s;
+  animation: wiggle 0.7s;
   animation-iteration-count: infinite;
 }
 
 .red:hover {
   background-color: rgba(255, 0, 0, 0.315);
-  animation: wiggle 0.5s;
+  animation: wiggle 0.7s;
   animation-iteration-count: infinite;
 }
 
 .green:hover {
   background-color: rgba(0, 255, 0, 0.376);
-  animation: wiggle 0.5s;
+  animation: wiggle 0.7s;
   animation-iteration-count: infinite;
 }
 
 .blue:hover {
   background-color: rgba(0, 217, 255, 0.397);
-  animation: wiggle 0.5s;
+  animation: wiggle 0.7s;
   animation-iteration-count: infinite;
 }
 
 .purple:hover {
   background-color: rgba(174, 0, 255, 0.404);
-  animation: wiggle 0.5s;
+  animation: wiggle 0.7s;
   animation-iteration-count: infinite;
 }
 
@@ -168,7 +174,7 @@ main {
     transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
-    transform: translate(5px, -1px) rotate(3deg);
+    transform: translate(5px, -1px) rotate(3deg) scale(1);
   }
   50% {
     transform: translate(-1px, 3px) rotate(-1deg);
@@ -186,6 +192,6 @@ main {
     transform: translate(1px, 4px) rotate(0deg);
   }
   100% {
-    transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg) scale(1);
   }
 }
